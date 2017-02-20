@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>GET vorm</title>
+</head>
+
+<body>
+<h3>Isikuankeet</h3>
+<form method="post" action="postvorm.html">
+  <label for="eesnimi">Eesnimi:</label>
+  <input type="text" name="eesnimi" id="eesnimi" placeholder="Eesnimi">
+  <br>
+  <label for="perenimi">Perenimi:</label>
+  <input type="text" name="perenimi" id="perenimi" placeholder="Perenimi"><br><br>
+  <label>Vali salasõna</label>
+  <input type="password" name="salasona">
+  <br>
+  <br>
+  <input type="hidden" name="salatekst" value="kasutaja eest peidus olev tekst">
+  <label for="naine">Naine</label>
+  <input type="radio" name="sugu" id="naine" value="naine">
+  <label for="mees">Mees</label>
+  <input type="radio" name="sugu" id="mees" value="mees">
+  <br>
+  <br>
+  Hobid: <br>
+  <input type="checkbox" id="rattasoit" name="hobi1" value="rattasoit">
+  <label for="rattasoit">Rattasõit</label>
+  <br>
+  <input type="checkbox" id="joonistamine" name="hobi2" value="joonistamine">
+  <label for="joonistamine">Joonistamine</label>
+  <br>
+  <input type="checkbox" id="progemine" name="hobi3" value="progemine">
+  <label for="progemine">Programmeerimine</label>
+  <br>
+  <br>
+  Haridus: <br>
+  <select name="haridus">
+    <option value="pohiharidus">Põhiharidus</option>
+    <option value="keskharidus">Keskharidus</option>
+    <option value="keskeriharidus">Keskeriharidus</option>
+    <option value="korgharidus">Kõrgharidus</option>
+  </select>
+  <br>
+  <br>
+  Mõned kommentaarid: <br>
+  <textarea name="kommentaar"></textarea>
+  <br>
+  <br>
+  Lae pilt üles: <br>
+  <input type="file" name="fail">
+  <br>
+  <br>
+  <button type="submit" formenctype="multipart/form-data">Saada</button>
+</form>
+</body>
+</html>
