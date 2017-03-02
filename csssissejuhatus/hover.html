@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Hover</title>
+<style>
+div, a {
+	padding: 10px;
+	text-transform: uppercase;
+	font: 1.3em Gotham, Helvetica Neue, Helvetica, Arial, " sans-serif";
+	font-weight: 900;
+}
+.dropdown {
+	position: relative;
+	width: 200px;
+	background: #0053B2;
+	color: #fff;
+	display: inline-block;
+}
+.dropdown-content {
+	background: #1984FF;
+	position: absolute;
+	width: 200px;
+	display: none;
+}
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+a {
+	text-decoration: none;
+	color: gray;
+	opacity: 0.6;
+}
+a:hover {
+	opacity: 1;
+}
+</style>
+</head>
+
+<body>
+<div class="dropdown">Parent menu
+  <div class="dropdown-content">Child menu</div>
+</div>
+<a href=".">Tagasi</a>
+</body>
+</html>
