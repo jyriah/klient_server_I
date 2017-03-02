@@ -1,0 +1,118 @@
+/* reset browser styles */
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1.2;
+	color: #666;
+}
+ol { 
+	padding-left: 1.2em;
+	list-style: decimal;
+}
+ul {
+	padding-left: 1.2em;
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} 
+/* end reset browser styles */
+
+a {
+	color: #FF1919;
+}
+a:visited {
+	color: #FF1919;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+	min-height: 100%;
+}
+
+h1 {
+	font-size: 1.8em;
+}
+h3 {
+	font-size: 1.2em;
+	margin-bottom: 10px;
+}
+img {
+	padding: 8px;
+	border: 1px solid #aaa;
+	box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2), -2px -2px 10px rgba(0, 0, 0, 0.2);
+	margin: 10px 0;
+}
+p {
+	color: #666;
+	margin-bottom: 10px;
+}
+li {
+	margin: 10px 0;
+	padding: 0 0.5em;
+	border-left: 3px solid red;
+	font-size: 0.95em;
+}
+h1.title {
+	color: #f00;
+	margin: 10px 0;
+	padding-bottom: 10px;
+	border-bottom: 3px solid #eee;
+}
+br.clear { clear: both; }
+.header {
+	margin-left: 2%;
+}
+.container {
+	width: 90%;
+	margin: 0 auto;
+	padding: 10px;
+	box-shadow: 5px 0 10px 0 rgba(0, 0, 0, 0.2), -5px 0 10px 0 rgba(0, 0, 0, 0.2);
+}
+.author {
+	font-size: 1.2em;
+	margin: 5px 0;
+}
+.position {
+	font-size: 0.8em;
+	color: white;
+	background-color: #B20000;
+	padding: 3px 6px;
+	border-radius: 6px;
+	display: inline-block;
+	margin: 1px 0;
+}
+.content {
+	width: 44%;
+	float: left;
+	margin: 0 2%;
+	border-right: 5px solid #00B233;
+	padding-right: 3%;
+}
+.right-sidebar {
+	color: black;
+	width: 44%;
+	float: right;
+	margin-right: 3%;
+}
+.reference {
+	font-size: 0.8em;
+	text-decoration: underline;
+	margin-bottom: 10px;
+}
+.intro {
+	font-weight: 900;
+	color: black;
+	margin-bottom: 5px;
+}

@@ -1,0 +1,30 @@
+.green {
+	color: green;
+}
+.underline {
+	text-decoration: underline;
+}
+.palegreen {
+	background-color: palegreen;
+}
+.double-size-font {
+	font-size: 200%;
+}
+.monospace {
+	font-family: monospace;
+}
+.yellow-black {
+	border: 3px solid black;
+	background-color: yellow;
+}
+.dashed-rouned {
+	border: 2px dashed black;
+	border-radius: 10px;
+}
+.italic-center {
+	font-style: italic;
+	text-align: center;
+}
+.crosshair-cursor:hover {
+	cursor: crosshair;
+}
