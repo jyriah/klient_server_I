@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Navbar</title>
+<style>
+* {
+	margin: 0px;
+	padding: 0px;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+.container {
+	width: 100%;
+	height: 50px;
+	background-color: black;
+}
+.container ul {
+	list-style: none;
+}
+.container > ul > li {
+	border-right: 3px solid white;
+}
+.container ul li {
+	background-color: darkcyan;
+	width: 180px;
+	height: 50px;
+	line-height: 50px;
+	line-height: 50px;
+	text-align: center;
+	float: left;
+	color: white;
+	font-size: 20px;
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	text-transform: uppercase;
+	position: relative;
+}
+.container > ul > li:last-child {
+	background-color: red;
+	border: none;
+}
+.container > ul > li:last-child:hover {
+	background-color: #e00;
+}
+.container ul li:hover {
+	background-color: #005252;
+}
+.container ul ul {
+	display: none;
+}
+.container ul li:hover > ul {
+	display: block;
+}
+.container ul ul ul {
+	margin-left: 180px;
+	top: 0px;
+	position: absolute;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <ul>
+    <li><a href="#">Meist</a></li>
+    <li><a href="#">Inimesed</a>
+      <ul>
+        <li><a href="#">Juhtkond</a></li>
+        <li><a href="#">Müük</a></li>
+        <li><a href="#">Finants</a></li>
+        <li><a href="#">Tootmine</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Tooted</a>
+      <ul>
+        <li><a href="#">Tootegrupp 1</a></li>
+        <li><a href="#">Tootegrupp 2</a>
+          <ul>
+            <li><a href="#">Toode 2- 1</a></li>
+            <li><a href="#">Toode 2- 2</a></li>
+            <li><a href="#">Toode 2- 3</a></li>
+          </ul>
+        </li>
+        <li><a href="#">Tootegrupp 3</a></li>
+      </ul>
+    </li>
+    <li><a href="#">Hinnakiri</a></li>
+    <li><a href="#">Kontakt</a></li>
+  </ul>
+</div>
+</body>
+</html>
