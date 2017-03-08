@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>6. Kodune töö</title>
+<style type="text/css">
+.active {
+	background: skyblue;
+	padding: 10px;
+}
+</style>
+<script type="text/javascript" src="js/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+<button id="next">edasi</button>
+<button id="prev">tagasi</button>
+<ul>
+  <li>esimene</li>
+  <li>teine</li>
+  <li>kolmas</li>
+  <li>neljas</li>
+</ul>
+<script>
+$(document).ready(function(){
+	$("li").first().addClass("active");
+	
+	$("#next").click(function() {
+		$el = $(".active");
+		$el.removeClass("active");
+		if(!($el.is("li:last-child"))) {
+		   $el.next().addClass("active");
+			
+		} else {
+			$("li").first().addClass("active");
+		}
+	});
+	
+		$("#prev").click(function() {
+		$el = $(".active");
+		$el.removeClass("active");
+		if(!($el.is("li:first-child"))) {
+		   $el.prev().addClass("active");
+			
+		} else {
+			$("li").last().addClass("active");
+		}
+	});
+});
+</script>
+</body>
+</html>

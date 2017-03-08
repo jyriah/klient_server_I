@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Float</title>
+<style type="text/css"></style>
+<link href="css/float1.css" rel="stylesheet" type="text/css">
+</head>
+
+<body onLoad="randomMove()">
+<img src="images/duck.png" id="duck" alt="background">
+<div id="target">
+  <div class="ring"></div>
+  <div class="ring"></div>
+  <div class="ring"></div>
+  <div class="ring"></div>
+  <div class="ring"></div>
+  <div class="ring"></div>
+</div>
+<script>
+		function randomMove() {
+			var el = document.getElementById("target");
+			el.addEventListener("click", function() {
+				var appWidth = window.innerWidth; // Rakenduse akna laius
+				var appHeight = window.innerHeight; // Rakendus akna kõrgus
+				
+				var elLeftPos = Math.round((Math.random() * appWidth)); // Juhuslik vasak elemendi positsioon selle keskosa järgi
+				var elTopPos = Math.round((Math.random() * appHeight)); // Juhuslik ülemine elemendi positsioon selle keskosa järgi
+				
+				if(elLeftPos > 150) elLeftPos = elLeftPos - 150; // Et hoida ära elemendi üle vasaku serva positsioneerimist
+				if(elTopPos > 150) elTopPos = elTopPos - 150; // Et hoida ära elemendi üle alumise serva positsioneerimist
+				
+				el.style.left = elLeftPos + "px";
+				el.style.top = elTopPos + "px";
+				// console.log(elLeftPos + ", " + elTopPos);
+			});
+		}
+	</script>
+</body>
+</html>
