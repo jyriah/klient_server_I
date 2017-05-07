@@ -1,0 +1,10 @@
+	<?php
+	foreach($puurid as $puuri_nr => $puur) {
+		echo "<div>";
+		echo "<p>Puuris number " . $puuri_nr . ", elavad järgmised loomad: </p>";
+		foreach($puur as $loom) {
+			echo "<img src='".$loom["liik"]."'>";
+		}
+		echo "</div>";
+	}
+	?>
